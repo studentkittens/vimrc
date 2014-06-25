@@ -1,0 +1,123 @@
+"NeoBundle Scripts-----------------------------
+if has('vim_starting')
+  set nocompatible               " Be iMproved
+
+  " Required:
+  set runtimepath+=/home/sahib/.vim/bundle/neobundle.vim/
+endif
+
+" Required:
+call neobundle#begin(expand('/home/sahib/.vim/bundle'))
+
+" Let NeoBundle manage NeoBundle
+" Required:
+NeoBundleFetch 'Shougo/neobundle.vim'
+
+" My Bundles here:
+NeoBundle 'Raimondi/delimitMate'
+NeoBundle 'Rip-Rip/clang_complete'
+NeoBundle 'Rykka/riv.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'airblade/vim-gitgutter'
+NeoBundle 'godlygeek/tabular'
+NeoBundle 'bling/vim-airline'
+NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'klen/python-mode'
+NeoBundle 'kien/rainbow_parentheses.vim'
+NeoBundle 'scrooloose/syntastic'
+NeoBundle 'szw/vim-ctrlspace'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'tpope/vim-fugitive'
+NeoBundle 'tpope/vim-sensible'
+NeoBundle 'tpope/vim-surround'
+NeoBundle 'vim-scripts/a.vim'
+NeoBundle 'vim-scripts/ack.vim'
+NeoBundle 'vim-scripts/gtk-vim-syntax'
+NeoBundle 'jistr/vim-nerdtree-tabs'
+
+" You can specify revision/branch/tag.
+NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
+
+" Required:
+call neobundle#end()
+
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
+"End NeoBundle Scripts-------------------------
+"Begin Custom User Settings -------------------
+set t_Co=256
+set guifont=Inconsolata\ for\ Powerline\ 13
+if has("gui_running")
+    colorscheme base16-monokai 
+else
+    colorscheme hybrid
+endif
+set background=dark
+
+set guioptions-=T 
+set guioptions-=r
+set guioptions-=l
+set guioptions-=b
+set guioptions-=L
+set guioptions-=m
+set guioptions-=e
+
+" Forced sensitive settings
+set number
+set showbreak=↪
+
+"tabs an spaces
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set softtabstop=4
+
+"window management
+au FocusLost * :silent! wall "save if focus lost
+au VimResized * :wincmd = "also resize split windows on resize
+
+"easy split window navigation
+nmap <silent> <C-Up> :wincmd k<CR>
+nmap <silent> <C-Down> :wincmd j<CR>
+nmap <silent> <C-Left> :wincmd h<CR>
+nmap <silent> <C-Right> :wincmd l<CR>
+set wmh=0 "Make Windows resizeable to statusline only
+
+"misc
+set wrap
+set textwidth=80
+set colorcolumn=+1
+set hidden
+set ttyfast
+set lazyredraw
+set colorcolumn=0
+
+"undo stuff
+set undofile
+set undoreload=1000
+set undodir=~/.vim/tmp/undo/
+set noswapfile
+
+"searching
+set ignorecase
+set smartcase
+set incsearch
+set showmatch
+set hlsearch
+set laststatus=2
+
+"security related
+set cm=blowfish
+
+" Disable message
+set shortmess+=I
+
+" Completion options
+set completeopt=menu
