@@ -5,7 +5,7 @@ Installation
 
    $ git clone https://github.com/studentkittens/vimrc
    $ curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh | sh
-   $ cp .vimrc ~/
-   $ mkdir ~/.vim/plugins
+   $ cd vimrc && cp .vimrc ~/
+   $ mkdir ~/.vim/plugin
    $ mkdir ~/.vim/tmp/undo
-   $ cp plugins/* ~/.vim/plugins/
+   $ cp plugin/* ~/.vim/plugin/
