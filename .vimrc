@@ -37,6 +37,8 @@ NeoBundle 'vim-scripts/a.vim'
 NeoBundle 'vim-scripts/ack.vim'
 NeoBundle 'vim-scripts/gtk-vim-syntax'
 NeoBundle 'jistr/vim-nerdtree-tabs'
+NeoBundle 'sudar/vim-arduino-syntax'
+NeoBundle 'Rykka/clickable.vim'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -53,9 +55,9 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 "Begin Custom User Settings -------------------
 set t_Co=256
-set guifont=Inconsolata\ for\ Powerline\ 13
+set guifont=PragmataPro\ for\ Powerline\ 12
 if has("gui_running")
-    colorscheme base16-monokai 
+    colorscheme hybrid
 else
     colorscheme hybrid
 endif
