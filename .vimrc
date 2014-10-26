@@ -39,6 +39,8 @@ NeoBundle 'vim-scripts/gtk-vim-syntax'
 NeoBundle 'jistr/vim-nerdtree-tabs'
 NeoBundle 'sudar/vim-arduino-syntax'
 NeoBundle 'Rykka/clickable.vim'
+NeoBundle 'vim-pandoc/vim-pandoc'
+NeoBundle 'vim-pandoc/vim-pandoc-syntax'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
