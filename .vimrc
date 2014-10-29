@@ -41,6 +41,9 @@ NeoBundle 'sudar/vim-arduino-syntax'
 NeoBundle 'Rykka/clickable.vim'
 NeoBundle 'vim-pandoc/vim-pandoc'
 NeoBundle 'vim-pandoc/vim-pandoc-syntax'
+NeoBundle 'vim-scripts/loremipsum'
+NeoBundle 'lukerandall/haskellmode-vim'
+
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
