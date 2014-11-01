@@ -13,8 +13,7 @@ call neobundle#begin(expand('/home/$USER/.vim/bundle'))
 " Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" My Bundles here:
-NeoBundle 'Raimondi/delimitMate'
+" My Bundles here: NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'Rip-Rip/clang_complete'
 NeoBundle 'Rykka/riv.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
@@ -43,13 +42,14 @@ NeoBundle 'vim-pandoc/vim-pandoc'
 NeoBundle 'vim-pandoc/vim-pandoc-syntax'
 NeoBundle 'vim-scripts/loremipsum'
 NeoBundle 'lukerandall/haskellmode-vim'
+NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
 
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
 
-" Required:
-call neobundle#end()
+    " Required:
+    call neobundle#end()
 
 " Required:
 filetype plugin indent on
@@ -60,13 +60,13 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 "Begin Custom User Settings -------------------
 set t_Co=256
-set guifont=PragmataPro\ for\ Powerline\ 12
+set guifont=PragmataPro\ for\ Powerline\ 13
+set background=dark
 if has("gui_running")
     colorscheme hybrid
 else
     colorscheme hybrid
 endif
-set background=dark
 
 set guioptions-=T 
 set guioptions-=r
