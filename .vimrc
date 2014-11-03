@@ -43,7 +43,7 @@ NeoBundle 'vim-pandoc/vim-pandoc-syntax'
 NeoBundle 'vim-scripts/loremipsum'
 NeoBundle 'lukerandall/haskellmode-vim'
 NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
-
+NeoBundle 'elzr/vim-json'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
