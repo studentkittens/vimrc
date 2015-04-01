@@ -44,6 +44,7 @@ NeoBundle 'vim-scripts/loremipsum'
 NeoBundle 'lukerandall/haskellmode-vim'
 NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
 NeoBundle 'elzr/vim-json'
+NeoBundle 'mattn/emmet-vim'
 
 " You can specify revision/branch/tag.
 NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
@@ -60,7 +61,7 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 "Begin Custom User Settings -------------------
 set t_Co=256
-set guifont=PragmataPro\ for\ Powerline\ 13
+set guifont=PragmataPro\ for\ Powerline\ 12
 set background=dark
 if has("gui_running")
     colorscheme hybrid
@@ -128,3 +129,12 @@ set shortmess+=I
 
 " Completion options
 set completeopt=menu
+
+"CtrlSpace
+hi CtrlSpaceSelected term=reverse ctermfg=187  ctermbg=23  cterm=bold
+hi CtrlSpaceNormal   term=NONE    ctermfg=244  ctermbg=232 cterm=NONE
+hi CtrlSpaceSearch   ctermfg=220  ctermbg=NONE cterm=bold
+hi CtrlSpaceStatus   ctermfg=230  ctermbg=234  cterm=NONE
+let g:pandoc#formatting#mode="h"
+let g:pandoc#formatting#textwidth=80
+let g:pandoc#syntax#conceal#use=0
