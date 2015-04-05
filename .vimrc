@@ -46,6 +46,7 @@ NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
 NeoBundle 'elzr/vim-json'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'cohama/lexima.vim'
+NeoBundle 'Glench/Vim-Jinja2-Syntax'
 
 
 " You can specify revision/branch/tag.
