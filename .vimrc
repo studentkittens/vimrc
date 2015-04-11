@@ -47,7 +47,7 @@ NeoBundle 'elzr/vim-json'
 NeoBundle 'mattn/emmet-vim'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
-
+NeoBundle 'reedes/vim-thematic'
 
 
 
@@ -66,13 +66,13 @@ NeoBundleCheck
 "End NeoBundle Scripts-------------------------
 "Begin Custom User Settings -------------------
 set t_Co=256
-set guifont=PragmataPro\ for\ Powerline\ 12
-set background=dark
-if has("gui_running")
-    colorscheme hybrid
-else
-    colorscheme hybrid
-endif
+"set guifont=PragmataPro\ for\ Powerline\ 12
+"set background=dark
+"if has("gui_running")
+"    colorscheme hybrid
+"else
+"    colorscheme hybrid
+"endif
 
 set guioptions-=T 
 set guioptions-=r
@@ -143,3 +143,33 @@ hi CtrlSpaceStatus   ctermfg=230  ctermbg=234  cterm=NONE
 let g:pandoc#formatting#mode="h"
 let g:pandoc#formatting#textwidth=80
 let g:pandoc#syntax#conceal#use=0
+
+"Thematic plugin
+
+let g:thematic#theme_name = 'bubblegum'
+let g:thematic#defaults = { 'background': 'dark',
+\                           'airline-theme': 'molokai',
+\                           'laststatus': 2,
+\ }
+
+let g:thematic#themes = {
+\ 'bubblegum'  : { 'typeface': 'PragmataPro for Powerline',
+\                  'font-size': 12,
+\                  'airline-theme': 'badwolf',
+\                },
+\ 'pencil_dark' :{ 'colorscheme': 'pencil',
+\                  'airline-theme': 'badwolf',
+\                  'typeface': 'PragmataPro for Powerline',
+\                  'font-size': 12,
+\                  'transparency': 10,
+\                },
+\ 'pencil_lite' :{ 'colorscheme': 'pencil',
+\                  'background': 'light',
+\                  'airline-theme': 'light',
+\                  'laststatus': 0,
+\                  'ruler': 1,
+\                  'typeface': 'PragmataPro for Powerline',
+\                  'transparency': 0,
+\                  'font-size': 12,
+\                },
+\ }
