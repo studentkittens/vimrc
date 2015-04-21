@@ -48,7 +48,8 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'cohama/lexima.vim'
 NeoBundle 'Glench/Vim-Jinja2-Syntax'
 NeoBundle 'reedes/vim-thematic'
-
+NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'fatih/vim-go'
 
 
 " You can specify revision/branch/tag.
@@ -140,25 +141,36 @@ hi CtrlSpaceSelected term=reverse ctermfg=187  ctermbg=23  cterm=bold
 hi CtrlSpaceNormal   term=NONE    ctermfg=244  ctermbg=232 cterm=NONE
 hi CtrlSpaceSearch   ctermfg=220  ctermbg=NONE cterm=bold
 hi CtrlSpaceStatus   ctermfg=230  ctermbg=234  cterm=NONE
+let g:ctrlspace_use_tabline=1
 let g:pandoc#formatting#mode="h"
 let g:pandoc#formatting#textwidth=80
 let g:pandoc#syntax#conceal#use=0
 
 "Thematic plugin
 
-let g:thematic#theme_name = 'bubblegum'
+let g:thematic#theme_name = 'hybrid'
 let g:thematic#defaults = { 'background': 'dark',
-\                           'airline-theme': 'molokai',
+\                           'airline-theme': 'hybrid',
 \                           'laststatus': 2,
 \ }
 
 let g:thematic#themes = {
-\ 'bubblegum'  : { 'typeface': 'PragmataPro for Powerline',
+\ 'hybrid'     : { 'colorscheme': 'mustang',
+\                  'typeface': 'PragmataPro for Powerline',
 \                  'font-size': 12,
-\                  'airline-theme': 'badwolf',
+\                   'sign-column-color-fix': 1,
+\                   'fullscreen-background-color-fix': 1,
+\                },
+\ 'iawriter'   : { 'colorscheme': 'pencil',
+\                  'background': 'light',
+\                  'columns': 75,
+\                  'font-size': 20,
+\                  'fullscreen': 1,
+\                  'laststatus': 0,
+\                  'linespace': 8,
+\                  'typeface': 'Cousine',
 \                },
 \ 'pencil_dark' :{ 'colorscheme': 'pencil',
-\                  'airline-theme': 'badwolf',
 \                  'typeface': 'PragmataPro for Powerline',
 \                  'font-size': 12,
 \                  'transparency': 10,
