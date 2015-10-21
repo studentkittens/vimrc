@@ -22,13 +22,11 @@ NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'bling/vim-airline'
-NeoBundle 'chriskempson/base16-vim'
-NeoBundle 'flazz/vim-colorschemes'
 NeoBundle 'klen/python-mode'
 NeoBundle 'kien/rainbow_parentheses.vim'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'szw/vim-ctrlspace'
-NeoBundle 'terryma/vim-multiple-cursors'
+"NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'tpope/vim-sensible'
 NeoBundle 'tpope/vim-surround'
@@ -36,25 +34,31 @@ NeoBundle 'vim-scripts/a.vim'
 NeoBundle 'vim-scripts/ack.vim'
 NeoBundle 'vim-scripts/gtk-vim-syntax'
 NeoBundle 'jistr/vim-nerdtree-tabs'
-NeoBundle 'sudar/vim-arduino-syntax'
-NeoBundle 'Rykka/clickable.vim'
+"NeoBundle 'sudar/vim-arduino-syntax'
+"NeoBundle 'Rykka/clickable.vim'
 NeoBundle 'vim-pandoc/vim-pandoc'
 NeoBundle 'vim-pandoc/vim-pandoc-syntax'
 NeoBundle 'vim-scripts/loremipsum'
-NeoBundle 'lukerandall/haskellmode-vim'
-NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
+"NeoBundle 'lukerandall/haskellmode-vim'
+"NeoBundle 'LaTeX-Box-Team/LaTeX-Box'
 NeoBundle 'elzr/vim-json'
-NeoBundle 'mattn/emmet-vim'
-NeoBundle 'cohama/lexima.vim'
-NeoBundle 'Glench/Vim-Jinja2-Syntax'
+"NeoBundle 'mattn/emmet-vim'
+"NeoBundle 'cohama/lexima.vim'
+"NeoBundle 'Glench/Vim-Jinja2-Syntax'
 NeoBundle 'reedes/vim-thematic'
-NeoBundle 'kchmck/vim-coffee-script'
+"NeoBundle 'kchmck/vim-coffee-script'
+NeoBundle 'w0ng/vim-hybrid'
 NeoBundle 'fatih/vim-go'
 
 
-" You can specify revision/branch/tag.
-NeoBundle 'Shougo/vimshell', { 'rev' : '3787e5' }
-
+" --- Colors
+"NeoBundle 'flazz/vim-colorschemes'
+NeoBundle 'reedes/vim-colors-pencil'
+NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'ywjno/vim-tomorrow-theme'
+NeoBundle 'chriskempson/base16-vim'
+ 
+ 
     " Required:
     call neobundle#end()
 
@@ -148,16 +152,16 @@ let g:pandoc#syntax#conceal#use=0
 
 "Thematic plugin
 
-let g:thematic#theme_name = 'hybrid'
+let g:thematic#theme_name = 'base16'
 let g:thematic#defaults = { 'background': 'dark',
-\                           'airline-theme': 'hybrid',
+\                           'airline-theme': 'tomorrow',
 \                           'laststatus': 2,
 \ }
 
 let g:thematic#themes = {
-\ 'hybrid'     : { 'colorscheme': 'mustang',
+\ 'base16'     : { 'colorscheme': 'base16-ashes',
 \                  'typeface': 'PragmataPro for Powerline',
-\                  'font-size': 12,
+\                  'font-size': 14,
 \                   'sign-column-color-fix': 1,
 \                   'fullscreen-background-color-fix': 1,
 \                },
